@@ -1,0 +1,232 @@
+/* HEADER Titulo*/ 
+.title h1{
+  padding: 1px 0;
+  text-align: center;
+  font-size: 80px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #517a73 0%, #9face6 100%);  
+  background-blend-mode: normal, lighten, soft-light;
+  color: #FFFFFF ;
+  font-family: fuenteTitulo6;
+}
+h2{
+    font-size: 40px;
+    font-family: fuenteTitulo7;
+}
+p{
+    font-size: 40px;
+    font-family: fuenteTitulo8;
+}
+
+ /*bOTONES INICIO,PRECIOS */
+ .menu {
+	/*Este centra los recuadritos rectangulares bueno a la altura */
+	margin: 15px auto 0;
+	position: relative;
+	/*Esta es para los cuadritos de Inicio registrar etc */
+	width: auto;
+	/*Altura De Los Cuadritos*/
+	height: 45px;
+	text-transform: uppercase;
+	background-image: linear-gradient(to right, #517a73 0%, #9face6 100%);  
+	background-blend-mode: normal, lighten, soft-light;
+	/*Circula los Regtangulitos*/
+	border-radius: 50px;
+	/*Tamaño de letra de los Regtangulitos*/
+	font-size: 2px;
+	text-align: center;
+
+  }
+.menu a {
+	/*Centra la letra de los Regtangulitos*/
+	line-height: 50px;
+	/*--*/
+	height: 200%;
+	/*Tamaño de letra de´los cuadrtos*/
+	font-size: 45px;
+	display: inline-block;
+	position: relative;
+	font-family: fuenteTitulo5;
+	/*--*/
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+  }
+th{
+	font-family: fuenteTitulo2;
+	font-size: 30px;
+}
+td{
+	font-family: fuenteTitulo10;
+	font-size: 25px;
+
+}
+
+/* Footer*/
+footer {
+	background-image: linear-gradient(to right, #517a73 0%, #9face6 100%);
+ 	background-blend-mode: multiply,multiply;
+	padding-bottom:0.1px; 
+
+
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: .3%;
+	padding-bottom: .3px;
+
+}
+.Contac-us {
+	width: 40%;
+	color: #fff;
+}
+
+.brand{
+	font-weight: 400;
+	font-size: 30px;
+	font-family:fuenteTitulo5;
+
+}
+.brand+p {
+	font-weight: 500;
+
+}
+.Social-Media {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+.Medio-social-incono{
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+
+}
+
+.Medio-social-incono:hover{
+	background: #fff;
+	color: #000000;
+}
+
+.Medio-social-incono i{
+	font-size: 35px;
+	line-height:60px;
+}
+.line{
+	width: 90%;
+	max-width: 1200px;
+	margin:0 auto;
+	height: 2px;
+	background: #fff;
+	margin-bottom: 60px;
+}
+ 
+ @media screen and (max-width: 800){
+ 	.Menu_Navegacion{
+ 		width: 50vw;
+ 	}
+
+ 	.Titulo{
+ 		font-size: 40px;
+ 	}
+
+ 	.Contenedor-Servicio img{
+ 		width: 80%;
+ 		margin-bottom: 40px;
+
+ 	}
+ 	.checklist-servivio {
+ 		width: 80%;
+ 	}
+
+ 	.Service{
+ 		margin-bottom: 30px;
+ 	}
+ 	.Agregar-imagen {
+ 		width: 80%;
+ 	}
+
+ 	.img-Galeria {
+ 		width: 45%;
+ 	}
+
+ 	.Cont-Expert {
+ 		width: 80%;
+ 	}
+
+ 	.footer-content{
+ 		justify-content: center;
+ 	}
+
+ 	.Social-Media {
+ 		width: 80%;
+ 		justify-content: space-evenly;
+ 	}
+ 	.Medio-social-incono {
+ 		margin-left: 0;
+ 	}
+
+
+ 	.Social-Media i{
+ 		margin-left: 0;
+ 	}
+ 	.Contac-us {
+ 		text-align: center;
+ 		width: 80%;
+ 		margin-bottom: 40px;
+ 	}
+
+ }
+
+/*BLOQUES DE FORMULARIO*/
+input[type=button], input[type=submit], input[type=reset] {
+    background-image: linear-gradient(to right, #517a73 0%, #9face6 100%);  
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 30px;
+    font-family: fuenteTitulo5;
+}
+input[type=text] {
+    border: 1px solid rgb(113, 87, 207);
+    border-radius: 30px;
+    width: 400px;
+    height:35px;
+}
+.input[type=button], input[type=submit], input[type=reset] {
+    transition-duration: 0.5s;
+}
+  
+.input[type=button], input[type=submit], input[type=reset]:hover {
+    background-color: #4CAF50; /* Green */
+    color: rgb(0, 0, 0);
+}
+button{
+	background-image: linear-gradient(to right, #517a73 0%, #9face6 100%);  
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 30px;
+    font-family: fuenteTitulo5;
+
+}
+

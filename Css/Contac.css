@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+  height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #4DB6AC ;
+    background-size: 56px 56px;
+    background-image:
+    linear-gradient(
+        135deg,
+        transparent 100%,
+        #f7a800 55%
+    ),
+     radial-gradient(
+        transparent 6px,
+        #ffffff 6px,
+        #ffffff 10px,
+        transparent 10px,
+        transparent 15px,
+        #ffffff 15px,
+        #ffffff 19px,
+        transparent 19px,
+        transparent 24px,
+        #ffffff 24px,
+        #ffffff 28px,
+        transparent 28px
+    );
+}
+/* HEADER Titulo*/ 
+.title h1{
+	padding: 20px 0;
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+	background-color:#fff ;
+    color: #000000;
+}
+/*Cuadros*/ 
+.container{
+	background: #fff;
+	width: 100%;
+	max-width: 1000px;
+	margin: 2em auto; 
+
+	display: grid;
+	grid-gap: 2em;
+	grid-template-columns: repea(5, 1fr);
+}
+.container >.heater,
+.container >.content,
+.container >.sidebar,
+.container >.footer,
+.container > div {
+	background: #fff;
+	padding: 30px;
+	border:  1px solid #000000;
+}
+/*Encabezado y pie de pagina */ 
+.container .header,
+.container .footer {
+	grid-column: 1/6;
+	background: #A3E4D7  ;
+	color: #0E0F09
+}
+
+.container > .content {
+	grid-column: 2/5 ;

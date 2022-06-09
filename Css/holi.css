@@ -1,0 +1,117 @@
+{
+	margin: 0;
+	padding: 0;
+}
+body {
+  background: 
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+/* HEADER Titulo*/ 
+.title h1{
+	padding: 20px 0;
+	text-align: center;
+	font-size: 2.9em;
+	text-transform: uppercase;
+	background-color:#F7DC6F ;
+    color: white;
+}
+/*Cuadros*/ 
+.container{
+	background: #fff;
+	width: 100%;
+	max-width: 1000px;
+	margin: 1.6em auto; 
+
+	display: grid;
+	grid-gap: 1.6em;
+	grid-template-columns: repeat(5, 1fr);
+}
+.container >.heater,
+.container >.content,
+.container >.sidebar,
+.container >.footer,
+.container > div {
+	background: #fff;
+	padding: 20px;
+	border:  1px solid #000000;
+}
+/*Encabezado y pie de pagina */ 
+.container .header,
+.container .footer {
+	grid-column: 1/6;
+	background: #A3E4D7  ;
+	color: #0E0F09;
+}
+
+.container > .content {
+	grid-column: span 3 ;
+}
+/*Color  de Cuadros */ 
+.content > .article {
+	background: #ECF0F1 ;
+	padding: 20px;
+	margin-top: 5px;
+	/*Color de letras de Cuadros */
+	color: #0E0F09 ;
+}
+/*Largo */ 
+.content .article h1,
+.content .article p{
+	padding: 10px;
+}
+
+.container > .siderbar{
+	grid-column: span 2;
+	background: #485460;
+	color: #ffffff;
+	display: flex;;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container > .sidebar {
+	grid-column: span 2;
+}
+
+.container .sidebar img {
+	/*Ancho de  imagenes  */ 
+	width:100%;
+	/*Largo de recuados e imagenes  */ 
+	margin-top: 5px;
+}
+/*Color de regtangulos y letra   */ 
+.container > .related-post {
+	background:  #F7DC6F;
+	color: #000000;
+	/*Alto de regtangulos*/
+	height: 400px;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.5s ease;
+}
+.container > .related-post:hover {
+	cursor: pointer;
+	color: #000000;
+	background: #ffffff;
+}
+@media screen and (max-width: 768px){
+	body {
+		text-align: center;
+	}
+	.container.conten{
+		grid-column: 1/-1;
+	}
+	.container .sidebar {
+		grid-column: 1/-1;
+	}
+	.container .related-post{
+		grid-column: 1/-1;
+	}
+}	
